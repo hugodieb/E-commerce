@@ -132,9 +132,6 @@ ALLOWED_HOSTS = ['*']
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
-
-# Simplified static file serving.
-# https://warehouse.python.org/project/whitenoise/
 # sem esse cara nao carrega os estaticos no heroku
 
 #STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
