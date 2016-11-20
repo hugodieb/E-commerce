@@ -137,7 +137,7 @@ STATIC_URL = '/static/'
 # https://warehouse.python.org/project/whitenoise/
 # sem esse cara nao carrega os estaticos no heroku
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 #E-mail
 EMAIL_HOST = ''
