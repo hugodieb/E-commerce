@@ -1,0 +1,48 @@
+**disable the collectstatic during a deploy
+
+heroku config:set DISABLE_COLLECTSTATIC=0
+
+**deploy
+
+git push heroku master
+
+**run migrations (django 1.10 added at least one)
+
+heroku run python manage.py migrate
+
+**run collectstatic using bower
+
+heroku run 'bower install --config.interactive=false;grunt prep;python manage.py collectstatic --noinput'
+
+**enable collecstatic for future deploys
+
+heroku config:unset DISABLE_COLLECTSTATIC
+
+
+**try it on your own (optional)
+
+heroku run python manage.py collectstatic
+
+**future deploys should work as normal from now on
+
+=====================================================================================================
+** comando de log heroku
+
+heroku logs --tail --app dieb-ecommerce
+
+
+
+git remote add nome do arquivo remoto https://git.heroku.com/dieb-ecommerce.git (para adicionar um arquivo remoto)
+
+git open --remote nome do arquivo remoto (dev ou heroku)
+
+git push dev master (push para dev no heroku)
+
+heroku open --remote dev (abrir browser no http://hd-ecommerce.herokuapp.com)
+
+
+===================================================================================================
+git rm -r --cached . (limpar cache quando ignore nao estiver ignorando arquivos)
+
+
+
