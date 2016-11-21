@@ -131,10 +131,6 @@ ALLOWED_HOSTS = ['*']
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
-# sem esse cara nao carrega os estaticos no heroku
-
-#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
 #E-mail
 EMAIL_HOST = 'smtp.mail.yahoo.com'
 EMAIL_PORT = 587
