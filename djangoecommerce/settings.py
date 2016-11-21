@@ -136,10 +136,12 @@ STATIC_URL = '/static/'
 #STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 #E-mail
-EMAIL_HOST = ''
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-DEFAULT_FROM_EMAIL = 'admin@djangoecommerce.com'
+EMAIL_HOST = 'smtp.mail.yahoo.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'hdecommerce@yahoo.com'
+EMAIL_HOST_PASSWORD = 'appdevyahoo'
+DEFAULT_FROM_EMAIL = 'hdecommerce@yahoo.com'
+EMAIL_USE_TLS = True
 
 try:
     from .local_settings import *
