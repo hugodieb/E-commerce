@@ -5,7 +5,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -1092,7 +1092,7 @@ input,
 button,
 select,
 textarea {
-  font-family: inherit;
+  font-family: 'Roboto Slab';
   font-size: inherit;
   line-height: inherit;
 }
@@ -3171,6 +3171,7 @@ fieldset[disabled] .btn-primary.focus {
   background-color: #fff;
 }
 .btn-success {
+  font-family: 'Roboto Slab';
   color: #fff;
   background-color: #5cb85c;
   border-color: #4cae4c;
@@ -6753,5 +6754,17 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+#h1contact {
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Ranga', cursive;
+  font-size: 80px;
+}
+
+#labelcontact {
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Ranga', cursive;
+  font-size: 20px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
