@@ -137,7 +137,7 @@ EMAIL_PORT = ''
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 DEFAULT_FROM_EMAIL = 'admin@djangoecommerce.com'
-EMAIL_USE_TLS = True
+#EMAIL_USE_TLS = True
 
 try:
     from .local_settings import *
