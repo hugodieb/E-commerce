@@ -2,7 +2,6 @@
 
 from django.shortcuts import render
 from django.http import HttpResponse
-from catalog.models import Category
 from django.conf import settings
 from .forms import ContactForm
 from django.views.generic import TemplateView
