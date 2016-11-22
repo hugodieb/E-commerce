@@ -132,11 +132,11 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
 #E-mail
-EMAIL_HOST = 'smtp.mail.yahoo.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'hdecommerce@yahoo.com'
-EMAIL_HOST_PASSWORD = 'appdevyahoo'
-DEFAULT_FROM_EMAIL = 'hdecommerce@yahoo.com'
+EMAIL_HOST = ''
+EMAIL_PORT = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+DEFAULT_FROM_EMAIL = 'admin@djangoecommerce.com'
 EMAIL_USE_TLS = True
 
 try:
