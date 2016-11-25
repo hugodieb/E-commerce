@@ -21,6 +21,12 @@ class ProductListTestCase(TestCase):
 
     def test_context(self):
         response = self.client.get(self.url)
-        self.assertTrue('list_products' in response.context)# verifica se existe o context carregado
-        product_list = response.context['list_products']# carrega os produtos do contexto
-        self.assertEqual(product_list.count(), 10)# verifica se tem 10 produtos que foram criado la em cima.
+        self.assertTrue('products' in response.context)# verifica se existe o context carregado
+        product_list = response.context['products']# carrega os produtos do contexto
+        self.assertEqual(product_list.count(), 3)# verifica se tem 10 produtos que foram criado la em cima.
+        paginator = response.context['paginator']
+        self.assertEquals(paginator.num_pages, 4)
+
+    def test_page_not_found(self):
+        response = self.client.get('{}?page=5'.format(self.url))
+        self.assertEquals(response.status_code, 404)
