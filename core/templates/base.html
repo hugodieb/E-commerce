@@ -42,7 +42,15 @@
 			</li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Minha Conta</a></li>
+						{% if user.is_authenticated %}
+						<li><a href="{% url 'logout' %}">Sair</a></li>
+						<p class="navbar-text"><span><span class="glyphicon glyphicon-user"></span>{{user}}</span></p>
+
+						{% else %}
+
+						<li><a href="{% url 'login' %}">Minha Conta</a></li>
+
+						{% endif %}
           </ul>
         </div>
       </div>
