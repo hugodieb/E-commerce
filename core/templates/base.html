@@ -43,12 +43,12 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
 						{% if user.is_authenticated %}
-						<li><a href="{% url 'logout' %}">Sair</a></li>
+						<li><a href="{% url 'logout' %}">Sign Out</a></li>
 						<p class="navbar-text"><span><span class="glyphicon glyphicon-user"></span>{{user}}</span></p>
 
 						{% else %}
 
-						<li><a href="{% url 'login' %}">Minha Conta</a></li>
+						<li><a href="{% url 'login' %}">Sign In</a></li>
 
 						{% endif %}
           </ul>
